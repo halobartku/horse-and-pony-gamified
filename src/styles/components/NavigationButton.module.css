@@ -1,0 +1,67 @@
+.container {
+  @apply relative flex items-center space-x-3 p-4 rounded-lg transition-all duration-300 ease-in-out;
+}
+
+.containerUnlocked {
+  @apply bg-surface shadow-md hover:shadow-lg cursor-pointer;
+}
+
+.containerLocked {
+  @apply bg-background/50 cursor-not-allowed opacity-50;
+}
+
+.containerCompleted {
+  @apply border-2 border-accent;
+}
+
+.iconContainer {
+  @apply w-12 h-12 rounded-full flex items-center justify-center;
+}
+
+.iconContainerUnlocked {
+  @apply bg-background text-accent;
+}
+
+.iconContainerLocked {
+  @apply bg-surface text-text/50;
+}
+
+.icon {
+  @apply w-6 h-6;
+}
+
+.contentContainer {
+  @apply flex-1;
+}
+
+.title {
+  @apply font-semibold;
+}
+
+.titleUnlocked {
+  @apply text-text;
+}
+
+.titleLocked {
+  @apply text-text/50;
+}
+
+.status {
+  @apply text-sm text-text/70;
+}
+
+.completionBadge {
+  @apply absolute -top-2 -right-2 w-6 h-6 bg-accent rounded-full flex items-center justify-center;
+}
+
+.completionIcon {
+  @apply w-4 h-4 text-background;
+}
+
+.lockIcon {
+  @apply absolute right-4;
+}
+
+.lockIconSvg {
+  @apply w-6 h-6 text-text/50;
+}

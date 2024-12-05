@@ -1,0 +1,119 @@
+.container {
+  @apply w-full max-h-screen overflow-hidden;
+}
+
+.mapContainer {
+  @apply relative w-full h-auto rounded-xl shadow-lg overflow-hidden bg-surface;
+}
+
+.mapImage {
+  @apply w-full h-auto object-contain max-h-[70vh];
+}
+
+.areaContainer {
+  @apply absolute cursor-pointer transform -translate-x-1/2 -translate-y-1/2;
+}
+
+.areaContainerLocked {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.areaGlow {
+  @apply absolute inset-0 rounded-full blur-md;
+}
+
+.areaGlowCompleted {
+  @apply bg-accent/50;
+}
+
+.areaGlowUnlocked {
+  @apply bg-primary/50;
+}
+
+.areaGlowLocked {
+  @apply bg-surface/30;
+}
+
+.areaIcon {
+  @apply w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center shadow-lg backdrop-blur-sm transition-all duration-300;
+}
+
+.areaIconCompleted {
+  @apply bg-accent text-background ring-2 ring-accent/50;
+}
+
+.areaIconUnlocked {
+  @apply bg-primary text-background ring-2 ring-primary/50 animate-pulse;
+}
+
+.areaIconLocked {
+  @apply bg-surface text-text/50;
+}
+
+.areaIconText {
+  @apply text-2xl sm:text-3xl;
+}
+
+.areaName {
+  @apply absolute top-full left-1/2 transform -translate-x-1/2 mt-2 whitespace-nowrap;
+}
+
+.areaNameText {
+  @apply px-3 py-1.5 rounded-full text-sm sm:text-base font-medium shadow-md backdrop-blur-sm;
+}
+
+.areaNameCompleted {
+  @apply bg-accent text-background;
+}
+
+.areaNameUnlocked {
+  @apply bg-primary text-background;
+}
+
+.areaNameLocked {
+  @apply bg-surface/80 text-text/70;
+}
+
+.tooltip {
+  @apply absolute top-[-80px] left-1/2 transform -translate-x-1/2 z-50;
+}
+
+.tooltipContent {
+  @apply bg-background/95 backdrop-blur-sm text-text px-4 py-2 rounded-lg shadow-xl max-w-[200px] text-center text-sm;
+}
+
+.tooltipArrow {
+  @apply absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-4 h-4 bg-background/95 rotate-45;
+}
+
+.legend {
+  @apply bg-background/90 backdrop-blur-sm p-3 rounded-xl shadow-lg w-full mt-3;
+}
+
+.legendGrid {
+  @apply grid grid-cols-3 gap-3 text-sm;
+}
+
+.legendItem {
+  @apply flex items-center justify-center space-x-2;
+}
+
+.legendDot {
+  @apply w-5 h-5 rounded-full;
+}
+
+.legendDotAvailable {
+  @apply bg-primary ring-2 ring-primary/30;
+}
+
+.legendDotCompleted {
+  @apply bg-accent ring-2 ring-accent/30;
+}
+
+.legendDotLocked {
+  @apply bg-surface ring-2 ring-text/10;
+}
+
+.legendText {
+  @apply text-text font-medium;
+}
